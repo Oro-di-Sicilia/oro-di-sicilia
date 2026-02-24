@@ -178,6 +178,12 @@ sendBtn.addEventListener("click",sendMessage);
 inputField.addEventListener("keypress",e=>{if(e.key==="Enter")sendMessage();});
 document.addEventListener("keydown",e=>{if(e.key==="Escape")toggleChat(false);});
 </script>
+<link rel="stylesheet" href="chatbot/widget.css" />
+<script>
+  // URL del tuo backend (Render/Fly/Railway/VPS). NON GitHub Pages.
+  window.ODS_CHAT_API_URL = "https://YOUR-BACKEND.example.com/api/chat";
+</script>
+<script src="chatbot/widget.js" defer></script>
 
 </body>
 </html>
